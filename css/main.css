@@ -107,6 +107,20 @@ h1 span {
     color: #f472b6;
 }
 
+#typing-name {
+    color: #f472b6;
+    border-right: 3px solid #f472b6;
+    padding-right: 5px;
+    text-shadow: 0 0 15px rgba(244, 114, 182, .8);
+    animation: cursorBlink .8s infinite;
+}
+
+@keyframes cursorBlink {
+    50% {
+        border-color: transparent;
+    }
+}
+
 .subtitle {
     font-size: 22px;
     color: #d1d5db;

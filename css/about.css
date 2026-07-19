@@ -244,15 +244,24 @@ h1 {
 .love-screen {
     position: fixed;
     inset: 0;
+
     display: flex;
     justify-content: center;
     align-items: center;
+
     background:
-        radial-gradient(circle at center, rgba(168, 85, 247, .35), transparent 35%),
-        linear-gradient(135deg, #312e81, #1e1b4b 45%, #020617);
+        linear-gradient(rgba(5, 8, 25, .35), rgba(5, 8, 25, .35)),
+        url("../img/projects/easteregg.png");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
     z-index: 99999;
+
     opacity: 0;
     visibility: hidden;
+
     transition: .6s;
     overflow: hidden;
 }
@@ -265,11 +274,14 @@ h1 {
 .love-screen::before {
     content: "";
     position: absolute;
-    width: 700px;
-    height: 700px;
-    background: radial-gradient(circle, rgba(244, 114, 182, .25), transparent 65%);
-    filter: blur(40px);
-    animation: galaxyGlow 5s infinite;
+    inset: 0;
+
+    background:
+        radial-gradient(circle at center,
+        rgba(255, 120, 180, .20),
+        transparent 60%);
+
+    animation: galaxyGlow 6s ease-in-out infinite;
 }
 
 @keyframes galaxyGlow {
@@ -296,10 +308,12 @@ h1 {
     width: 10px;
     height: 10px;
     border-radius: 50%;
-    background: #ff4fa3;
+    background: #ff5fb8;
     box-shadow:
-        0 0 10px #ff4fa3,
-        0 0 40px #ff1493;
+        0 0 12px #ff5fb8,
+        0 0 30px #ff2f92,
+        0 0 60px #ff2f92,
+        0 0 100px white;
     animation: formHeart 3s forwards;
 }
 
@@ -372,7 +386,6 @@ h1 {
     box-shadow: 0 0 25px white;
 }
 
-/* Vlinders */
 .butterfly {
     position: absolute;
     width: 25px;

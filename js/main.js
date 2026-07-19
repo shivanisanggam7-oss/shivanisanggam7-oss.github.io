@@ -9,3 +9,32 @@ for (let i = 0; i < 120; i++) {
     star.style.height = 40 + Math.random() * 120 + "px";
     stars.appendChild(star);
 }
+
+const typingName = document.getElementById("typing-name");
+const name = "Shivani Sanggam";
+let index = 0;
+let deleting = false;
+
+function animateName() {
+    if (!deleting) {
+        typingName.textContent = name.substring(0, index + 1);
+        index++;
+
+        if (index === name.length) {
+            deleting = true;
+            setTimeout(animateName, 1800);
+            return;
+        }
+    } else {
+        typingName.textContent = name.substring(0, index - 1);
+        index--;
+
+        if (index === 0) {
+            deleting = false;
+        }
+    }
+
+    setTimeout(animateName, deleting ? 70 : 120);
+}
+
+animateName();

@@ -81,7 +81,7 @@ const butterflyContainer = document.querySelector(".butterflies");
 for (let i = 0; i < 40; i++) {
     const butterfly = document.createElement("div");
     butterfly.className = "butterfly";
-    butterfly.innerHTML = "🦋";
+    butterfly.innerHTML = "❀";
 
     butterfly.style.left = Math.random() * 100 + "%";
     butterfly.style.top = Math.random() * 100 + "%";
