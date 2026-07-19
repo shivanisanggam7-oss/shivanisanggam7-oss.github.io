@@ -68,14 +68,14 @@ header {
 
 .nav-link {
     text-decoration: none;
-    color: #f472b6; /* roze kleur */
+    color: #f472b6;
     font-weight: 600;
     font-size: 18px;
     padding: 10px 16px;
     border-radius: 10px;
     background: rgba(0, 0, 0, .25);
     transition: .3s;
-    text-shadow: 
+    text-shadow:
         0 0 8px rgba(244, 114, 182, .8),
         0 0 20px rgba(244, 114, 182, .5);
 }
@@ -323,5 +323,80 @@ h1 span {
     }
     .moon {
         display: none;
+    }
+}
+
+@media(max-width: 900px) {
+    header {
+        flex-direction: column;
+        gap: 25px;
+        padding: 20px;
+    }
+    .nav {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+    .container {
+        padding: 40px 20px;
+    }
+    h1 {
+        font-size: 45px;
+    }
+    .subtitle {
+        font-size: 19px;
+        margin-bottom: 40px;
+    }
+    .card {
+        padding: 30px;
+    }
+    .card h2 {
+        font-size: 28px;
+    }
+}
+
+@media(max-width: 600px) {
+    header {
+        width: 100%;
+    }
+    .logo {
+        width: 55px;
+        height: 55px;
+    }
+    .nav-link {
+        font-size: 15px;
+        padding: 8px 12px;
+    }
+    h1 {
+        font-size: 35px;
+    }
+    .subtitle {
+        font-size: 17px;
+    }
+    .portfolio-layout {
+        display: flex;
+        flex-direction: column;
+        gap: 25px;
+        min-height: auto;
+    }
+    .card {
+        min-height: auto;
+        padding: 25px;
+        margin: 0;
+    }
+    .card h2 {
+        font-size: 24px;
+    }
+    .card p,
+    .card li {
+        font-size: 15px;
+        line-height: 1.6;
+    }
+    .moon {
+        display: none;
+    }
+    .footer {
+        margin-top: 50px;
+        font-size: 14px;
     }
 }

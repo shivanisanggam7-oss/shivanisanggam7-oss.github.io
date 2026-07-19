@@ -1,96 +1,103 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About</title>
-    <link rel="icon" href="img/icon.png" type="image/png" />
-    <link rel="stylesheet" href="css/main.css" />
-    <link rel="stylesheet" href="css/about.css" />
-  </head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About | Shivani Sanggam</title>
+    <link rel="icon" href="img/icon.png" type="image/png">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/about.css">
+</head>
+<body>
 
-  <body>
-    
     <div id="stars"></div>
-    
-     <header>
 
+    <header>
         <img src="./img/logo.png" alt="Photo of Shivani Sanggam" class="logo">
-
         <nav class="nav">
             <a class="nav-link" href="index.html">Home</a>
-            <a class="nav-link" href="about.html">About</a>
+            <a class="nav-link active" href="about.html">About</a>
             <a class="nav-link" href="work.html">Work</a>
             <a class="nav-link" href="contact.html">Contact</a>
         </nav>
     </header>
-    
+
     <main class="container">
-      <h1>About Me</h1>
+        <h1>About Me</h1>
 
-      <section>
-        <h2>Background</h2>
-        <p>
-          My name is Shivani Sanggam, and I am a passionate web development student
-         with a strong interest in creating modern and user-friendly websites.
-         I enjoy turning ideas into functional digital solutions by combining
-         creativity with technology.
-        </p>
+        <div class="easter-star" id="easterStar">★</div>
 
-        <p>
-          During my studies, I have gained experience with HTML, CSS, JavaScript,
-         Node.js, React, Tailwind CSS, and TanStack Router. I enjoy learning new
-         technologies and improving my skills by working on different projects,
-         including websites and applications that solve real-world problems.
-        </p>
+        <div class="love-screen" id="loveScreen">
+            <div class="butterflies">
+                <div class="butterfly">🦋</div>
+                <div class="butterfly">🦋</div>
+                <div class="butterfly">🦋</div>
+                <div class="butterfly">🦋</div>
+                <div class="butterfly">🦋</div>
+            </div>
+            <div class="particle-heart" id="particleHeart"></div>
+            <div class="love-content">
+                <h2>You found the secret! ✨</h2>
+                <p>Keep creating, keep learning, and keep shining.</p>
+                <button id="backButton">Back to Portfolio</button>
+            </div>
+        </div>
 
-      </section>
+        <div class="about-layout">
+            <section class="card about">
+                <h2>Background</h2>
+                <p>My name is Shivani Sanggam, and I am a passionate Software Engineering student with a strong interest in creating modern and user-friendly websites. I enjoy turning ideas into functional digital solutions by combining creativity with technology.</p>
+                <br>
+                <p>During my studies, I have gained experience with HTML, CSS, JavaScript, Node.js, React, Tailwind CSS, and TanStack Router. I enjoy learning new technologies and improving my skills by working on different projects, including websites and applications that solve real-world problems.</p>
+            </section>
 
-       <section>
-    <h2>Interests</h2>
-    <p>
-      I am interested in web development, UI/UX design, and exploring new
-      technologies. I enjoy creating clean and responsive designs that provide
-      users with a smooth experience. Outside of programming, I like learning
-      new things, being creative, and working on personal projects to expand
-      my knowledge.
-    </p>
-  </section>
+            <section class="card projects">
+                <h2>Interests</h2>
+                <p>I am interested in web development, UI/UX design, and exploring new technologies. I enjoy creating clean and responsive designs that provide users with a smooth experience. Outside of programming, I enjoy learning new things, being creative, and working on personal projects.</p>
+            </section>
 
-  <section>
-  <h2>Education</h2>
-  <ul>
-    <li>
-      <strong>Bachelor of Science in Software Engineering in progress</strong><br />
-      <i>UNASAT - Paramaribo, Suriname</i><br />
-      Currently studying software engineering, focusing on web development,
-      programming, software design, databases, and building practical software
-      solutions.
-    </li>
-  </ul>
-</section>
+            <section class="card experience">
+                <h2>Education</h2>
+                <ul>
+                    <li>
+                        <strong>Bachelor of Science in Software Engineering (In Progress)</strong>
+                        <br>
+                        <i>UNASAT – Paramaribo, Suriname</i>
+                        <br><br>
+                        Currently studying Software Engineering with a focus on web development, programming, software design, databases, and practical software solutions.
+                    </li>
+                </ul>
+            </section>
 
-  <section>
-    <h2>Skills</h2>
-    <p>
-      <strong>Frontend:</strong> HTML, CSS, JavaScript, React, Tailwind CSS<br />
-      <strong>Backend:</strong> Node.js, Express.js, Prisma<br />
-      <strong>Tools:</strong> Git, GitHub, Visual Studio Code
-    </p>
-  </section>
-</main>
+            <section class="card skills">
+                <h2>Skills</h2>
+                <p>
+                    <strong>Frontend</strong>
+                    <br>
+                    HTML5, CSS3, JavaScript, React, Tailwind CSS
+                </p>
+                <br>
+                <p>
+                    <strong>Backend</strong>
+                    <br>
+                    Node.js, Express.js, Prisma
+                </p>
+                <br>
+                <p>
+                    <strong>Tools</strong>
+                    <br>
+                    Git, GitHub, Visual Studio Code
+                </p>
+            </section>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <h3>Shivani Sanggam</h3>
+        <p>Software Engineering Student</p>
+        <p class="copyright">© 2026 Shivani Sanggam | Portfolio</p>
+    </footer>
 
     <script src="js/about.js"></script>
-  </body>
+</body>
 </html>
-
-<footer class="footer">
-
-    <h3>Shivani Sanggam</h3>
-
-    <p>Software Engineering Student</p>
-    <p class="copyright">
-        © 2026 Shivani Sanggam | Portfolio
-    </p>
-
-</footer>
